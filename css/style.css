@@ -1,0 +1,57 @@
+#bg-top {
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #bg-top {
+    background-image: url('../images/bg-top.jpg');
+  }
+}
+@media (max-width: 768px) {
+  #bg-top {
+    background-image: url('../images/bg-top-mobile.jpg');
+    background-size: auto;
+  }
+}
+.navbar {
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+.navbar-toggle .icon-bar {
+  background-color: #FFFFFF;
+}
+nav.navbar div ul.nav li a {
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  nav.navbar div ul.nav li a {
+    margin: 0 0 3px 0;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  nav.navbar div ul.nav li a {
+    padding: 15px 10px;
+    font-size: 13px;
+  }
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background: none;
+}
+@media (min-width: 768px) {
+  .nav > li > a:hover,
+  .nav > li > a:focus {
+    border-bottom: 3px solid #18bcb9;
+    margin: 0;
+  }
+}
+.navbar-divider {
+  width: 1px;
+  background-color: #FFFFFF;
+  height: 25px;
+  margin: 13px;
+  display: block;
+}
+#header {
+  height: 150px;
+}

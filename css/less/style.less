@@ -1,0 +1,60 @@
+@main: #FF00F0;
+@primaryColor: #FFFFFF;
+@secondaryColor: #18bcb9;
+
+@small: 768px;
+@medium: 1200px;
+
+#bg-top {
+	background-size: cover;
+
+	@media (min-width: @small) {
+		background-image: url('../images/bg-top.jpg');
+	}
+
+	@media (max-width: @small) {
+		background-image: url('../images/bg-top-mobile.jpg');
+		background-size: auto;
+	}
+}
+
+.navbar {
+	color: @primaryColor;
+	border-bottom: 1px solid @primaryColor;
+}
+	.navbar-toggle .icon-bar {
+		background-color: @primaryColor;
+	}
+
+	nav.navbar div ul.nav li a {
+		color: @primaryColor;
+		@media (min-width: @small) {
+			margin: 0 0 3px 0;
+			padding-bottom: 30px;
+		}
+
+		@media (max-width: @medium) {
+			padding: 15px 10px;
+			font-size: 13px;
+		}
+	}
+
+	.nav > li > a:hover, .nav > li > a:focus {
+		background: none;
+		@media (min-width: @small) {
+			border-bottom: 3px solid @secondaryColor;
+			margin: 0;
+		}
+	}
+
+	.navbar-divider {
+		width: 1px;
+		background-color: @primaryColor;
+		height: 25px;
+		margin: 13px;
+		display: block;
+	}
+
+#header {
+	height: 150px;
+}
