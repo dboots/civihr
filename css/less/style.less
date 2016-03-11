@@ -1,9 +1,65 @@
 @main: #FF00F0;
 @primaryColor: #FFFFFF;
 @secondaryColor: #18bcb9;
+@greyColor: #DEDEDE;
 
 @small: 768px;
 @medium: 1200px;
+
+.bg-grey {
+	background-color: @greyColor;
+}
+
+#main-content span.glyphicon {
+	display: block;
+}
+
+#main-content ul.nav li {
+	@media (min-width: @small) {
+		width: 16.66%;
+	}
+
+	@media (max-width: @small) {
+		width: 100%;
+	}
+	
+	float: left;
+	text-align: center;
+}
+
+.subtitle {
+	font-size: 22px;
+}
+
+.input {
+	border: 0;
+	color: @secondaryColor;
+	padding: 2%;
+	margin: 0 0 5% 0;
+}
+
+.half-width {
+	@media (min-width: @small) {
+		width: 49%;
+	}
+}
+
+.full-width {
+	width: 100%
+}
+
+@media (max-width: @small) {
+	.full-width-sm {
+		width: 100%;	
+	}
+}
+
+.button {
+	border: 0;
+	background-color: @secondaryColor;
+	color: @primaryColor;
+	padding: 2% 5%;
+}
 
 #bg-top {
 	background-size: cover;
@@ -18,43 +74,43 @@
 	}
 }
 
-.navbar {
+#main-top {
 	color: @primaryColor;
-	border-bottom: 1px solid @primaryColor;
 }
-	.navbar-toggle .icon-bar {
-		background-color: @primaryColor;
-	}
 
-	nav.navbar div ul.nav li a {
+	.navbar {
 		color: @primaryColor;
-		@media (min-width: @small) {
-			margin: 0 0 3px 0;
-			padding-bottom: 30px;
+		border-bottom: 1px solid @primaryColor;
+	}
+		.navbar-toggle .icon-bar {
+			background-color: @primaryColor;
 		}
 
-		@media (max-width: @medium) {
-			padding: 15px 10px;
-			font-size: 13px;
+		nav.navbar div ul.nav li a {
+			color: @primaryColor;
+			@media (min-width: @small) {
+				margin: 0 0 3px 0;
+				padding-bottom: 30px;
+			}
+
+			@media (max-width: @medium) {
+				padding: 15px 10px;
+				font-size: 13px;
+			}
 		}
-	}
 
-	.nav > li > a:hover, .nav > li > a:focus {
-		background: none;
-		@media (min-width: @small) {
-			border-bottom: 3px solid @secondaryColor;
-			margin: 0;
+		.nav > li > a:hover, .nav > li > a:focus {
+			background: none;
+			@media (min-width: @small) {
+				border-bottom: 3px solid @secondaryColor;
+				margin: 0;
+			}
 		}
-	}
 
-	.navbar-divider {
-		width: 1px;
-		background-color: @primaryColor;
-		height: 25px;
-		margin: 13px;
-		display: block;
-	}
-
-#header {
-	height: 150px;
-}
+		.navbar-divider {
+			width: 1px;
+			background-color: @primaryColor;
+			height: 25px;
+			margin: 13px;
+			display: block;
+		}
