@@ -1,0 +1,70 @@
+@import 'variables';
+
+.top-title {
+	font-size: 29px;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 53px;
+}
+
+.navbar-logo {
+	float: left;
+}
+
+#bg-top {
+	background-size: cover;
+
+	@media (min-width: @small) {
+		background-image: url('../images/bg-top.jpg');
+	}
+
+	@media (max-width: @small) {
+		background-image: url('../images/bg-top-mobile.jpg');
+		background-size: auto;
+	}
+}
+
+#main-top {
+	color: @primaryColor;
+}
+
+	.navbar {
+		color: @primaryColor;
+		border-bottom: 1px solid @primaryColor;
+	}
+		.navbar .fa-nav {
+			padding: 0 0 0 2px;
+		}
+
+		.navbar-toggle .icon-bar {
+			background-color: @primaryColor;
+		}
+
+		nav.navbar div ul.nav li a {
+			color: @primaryColor;
+			border-bottom: 3px solid transparent;
+			@media (min-width: @small) {
+				padding-bottom: 30px;
+			}
+
+			@media (max-width: @medium) {
+				padding: 15px 10px;
+				font-size: @fontSizeSmall;
+			}
+		}
+
+		.nav > li > a:hover, .nav > li > a:focus {
+			background: none;
+			@media (min-width: @small) {
+				border-bottom: 3px solid @secondaryColor !important;
+				margin: 0;
+			}
+		}
+
+		.navbar-divider {
+			width: 1px;
+			background-color: @primaryColor;
+			height: 25px;
+			margin: 13px;
+			display: block;
+		}

@@ -6,7 +6,7 @@ gulp.task('default', function() {
 });
 
 gulp.task('less', function() {
-   gulp.src('css/less/*.less')
+   gulp.src('css/less/style.less')
       .pipe(less())
       .pipe(gulp.dest('./css/'));
 });

@@ -1,0 +1,83 @@
+@import 'variables';
+
+//-- Global utility classes
+
+
+.secondary-color {
+	color: @secondaryColor;
+}
+
+.bold { font-weight: bold; }
+
+.bg-grey {
+	background-color: @greyColor;
+}
+
+.subtitle {
+	font-size: @fontSizeLarge;
+}
+
+.section-title {
+	text-transform: uppercase;
+	font-size: @fontSizeMedium;
+	margin: 2% 0;
+}
+
+.content-title {
+	font-size: @fontSizeLarge;
+	margin: 2% 0;
+}
+
+.outline {
+	border: 5px solid #DEDEDE;
+    border-radius: 55px;
+    width: 100px;
+    height: 100px;
+    padding: 25px 0 0 0;
+    margin: auto;
+    display: block;
+    color: @secondaryColor;
+    cursor: pointer;
+}
+
+.outline.active, .outline:hover {
+	border-color: @secondaryColor;
+	color: #000000;
+}
+
+.input {
+	border: 0;
+	color: @secondaryColor;
+	padding: 2%;
+	margin: 0 0 5% 0;
+}
+
+.half-width {
+	@media (min-width: @small) {
+		width: 49%;
+	}
+}
+
+.full-width {
+	width: 100%
+}
+
+@media (max-width: @small) {
+	.full-width-sm {
+		width: 100%;	
+	}
+}
+
+.button {
+	border: 0;
+	background-color: @secondaryColor;
+	color: @primaryColor;
+	padding: 2% 5%;
+}
+
+.content-block {
+	padding: 5% 0;
+	font-size: @fontSizeSmall;
+}
+
+.center { text-align: center; }
