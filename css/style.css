@@ -1,3 +1,8 @@
+.duration {
+  -webkit-transition-duration: 300ms;
+  /* Safari */
+  transition-duration: 300ms;
+}
 .secondary-color {
   color: #18bcb9;
 }
@@ -71,7 +76,7 @@
   font-size: 29px;
   font-weight: 400;
   text-transform: uppercase;
-  line-height: 53px;
+  line-height: 40px;
 }
 .navbar-logo {
   float: left;
