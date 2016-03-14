@@ -13,7 +13,8 @@
   background-color: #DEDEDE;
 }
 .subtitle {
-  font-size: 22px;
+  font-size: 18px;
+  margin: 0 0 5% 0;
 }
 .section-title {
   text-transform: uppercase;
@@ -44,7 +45,16 @@
   border: 0;
   color: #18bcb9;
   padding: 2%;
-  margin: 0 0 5% 0;
+}
+@media (min-width: 768px) {
+  .input {
+    margin: 0 0 5% 0;
+  }
+}
+@media (max-width: 768px) {
+  .input {
+    margin: 0 0 1% 0;
+  }
 }
 @media (min-width: 768px) {
   .half-width {
@@ -73,7 +83,7 @@
   text-align: center;
 }
 .top-title {
-  font-size: 29px;
+  font-size: 30px;
   font-weight: 400;
   text-transform: uppercase;
   line-height: 40px;
@@ -93,10 +103,12 @@
   #bg-top {
     background-image: url('../images/bg-top-mobile.jpg');
     background-size: auto;
+    background-repeat: no-repeat;
   }
 }
 #main-top {
   color: #FFFFFF;
+  padding: 0 0 10% 0;
 }
 .navbar {
   color: #FFFFFF;
