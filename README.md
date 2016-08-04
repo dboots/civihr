@@ -1,4 +1,6 @@
-**Option 2: CiviHR site**
+#Responsive HTML/LESS Demo
+
+##Demo be viewed at [here](http://www.donboots.com/civihr).
 
 CiviHR is a project that Compucorp are currently working on and will need a new site:
 
